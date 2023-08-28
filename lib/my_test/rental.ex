@@ -53,13 +53,6 @@ defmodule MyTest.Rental do
     timestamps()
   end
 
-  # def changeset(rental, params \\ %{}) do
-  #   rental
-  #   |> cast(params, [:customer_id, :movie_id, :date_rented])
-  #   |> validate_required([:customer_id, :movie_id, :date_rented])
-  #   |> unique_constraint([:customer_id, :movie_id], name: :rentals_unique_constraint)
-  # end
-
   def changeset(rental, params \\ %{}) do
     rental
     |> cast(params, [:customer_id, :movie_id, :date_rented, :customer_name, :movie_title])
