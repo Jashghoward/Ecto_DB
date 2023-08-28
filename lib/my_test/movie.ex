@@ -13,6 +13,7 @@ defmodule MyTest.Movie do
     has_many :rentals, Rental
   end
 
+
   def changeset(movie, params \\ %{}) do
     movie
     |> cast(params, [:title, :category, :shop_id])
