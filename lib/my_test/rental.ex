@@ -59,6 +59,7 @@ defmodule MyTest.Rental do
     |> validate_required([:customer_id, :movie_id, :date_rented, :customer_name, :movie_title])
     |> unique_constraint([:customer_id, :movie_id], name: :rentals_unique_constraint)
   end
+
   # def get_rentals_with_details() do
   #   from(r in Rental,
   #     join: m in MyTest.Movie, on: r.movie_id == m.id,
