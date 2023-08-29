@@ -23,5 +23,4 @@ defmodule MyTest.Customer do
 
       IO.puts("New movie added successfully.")
   end
-
 end
