@@ -36,5 +36,4 @@ defmodule MyTest.Movie do
 
     IO.puts("New movie added successfully.")
   end
-
 end
