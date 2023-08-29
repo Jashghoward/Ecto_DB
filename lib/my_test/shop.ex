@@ -1,7 +1,7 @@
   defmodule MyTest.Shop do
     import Ecto.Changeset
     use Ecto.Schema
-    alias MyTest.{Movie}
+    alias MyTest.{Movie, Repo, Shop}
 
 
     schema "shops" do
@@ -27,4 +27,11 @@
       |> Shop.changeset(attrs)
       |> Repo.insert()
     end
+
+    # def create_shop(shop_name) do
+    #   result = %Shop{name: shop_name}
+    #   Repo.insert!(result)
+
+    #   IO.puts("New shop has been created #{result}")
+    # end
   end
