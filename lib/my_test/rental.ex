@@ -60,17 +60,6 @@ defmodule MyTest.Rental do
     |> unique_constraint([:customer_id, :movie_id], name: :rentals_unique_constraint)
   end
 
-
-
-  # def get_rentals_with_details() do
-  #   from(r in Rental,
-  #     join: m in MyTest.Movie, on: r.movie_id == m.id,
-  #     join: c in MyTest.Customer, on: r.customer_id == c.id,
-  #     select: %{movie_title: m.title, customer_name: fragment("CONCAT(?, ' ', ?)", c.firstname, c.lastname)}
-  #   )
-  #   |> Repo.all()
-  # end
-
   def get_rentals_with_details() do
     from(r in Rental,
       join: m in MyTest.Movie, on: r.movie_id == m.id,
