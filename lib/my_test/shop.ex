@@ -28,6 +28,7 @@
     #   |> Repo.insert()
     # end
 
+    # Create a new shop with this function
     def create_shop(shop_name) do
       result = %Shop{name: shop_name}
       Repo.insert!(result)
