@@ -22,18 +22,17 @@
   defmodule MyApp.ShopContext do
     alias MyTest.{Repo, Shop}
 
-    def create_shop(attrs) do
-      %Shop{}
-      |> Shop.changeset(attrs)
-      |> Repo.insert()
-    end
-
-    # def create_shop(shop_name) do
-    #   result = %Shop{name: shop_name}
-    #   Repo.insert!(result)
-
-    #   IO.puts("New shop has been created #{result}")
+    # def create_shop(attrs) do
+    #   %Shop{}
+    #   |> Shop.changeset(attrs)
+    #   |> Repo.insert()
     # end
+
+    def create_shop(shop_name) do
+      result = %Shop{name: shop_name}
+      Repo.insert!(result)
+      IO.puts("New shop has been created #{result}")
+    end
 
 
 
