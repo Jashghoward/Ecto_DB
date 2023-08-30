@@ -89,7 +89,7 @@ defmodule MyTest.Rental do
   #         IO.puts("Movie rented successfully")
   #     end
   #   end)
-  end
+  # end
 end
 
 
