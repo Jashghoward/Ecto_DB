@@ -33,7 +33,4 @@
       Repo.insert!(result)
       IO.puts("New shop has been created #{result}")
     end
-
-
-
   end
