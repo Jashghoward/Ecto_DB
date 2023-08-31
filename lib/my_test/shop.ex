@@ -35,6 +35,8 @@
       IO.puts("New shop has been created #{result}")
     end
 
+
+
     def list_shops do
       all_shops = Repo.all(Shop)
 
