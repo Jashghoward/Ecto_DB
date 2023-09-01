@@ -73,6 +73,8 @@ defmodule MyTest.Rental do
         inserted_at: r.inserted_at  # Include the inserted_at field
       }
     )
+
+
     |> Repo.all()
   end
 
