@@ -50,6 +50,7 @@ defmodule MyTest.Rental do
     field :customer_name, :string
     field :movie_title, :string
 
+
     timestamps()
   end
 
