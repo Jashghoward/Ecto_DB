@@ -68,6 +68,7 @@ defmodule MyTest.Rental do
       join: c in MyTest.Customer, on: r.customer_id == c.id,
       select: %{
         id: r.id,
+
         movie_id: m.id,
         movie_title: m.title,
         customer_id: c.id,
