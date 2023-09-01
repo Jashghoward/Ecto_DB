@@ -60,6 +60,8 @@ defmodule MyTest.Rental do
     |> unique_constraint([:customer_id, :movie_id], name: :rentals_unique_constraint)
   end
 
+
+
   def get_rentals_with_details() do
     from(r in Rental,
       join: m in MyTest.Movie, on: r.movie_id == m.id,
@@ -73,8 +75,6 @@ defmodule MyTest.Rental do
         inserted_at: r.inserted_at  # Include the inserted_at field
       }
     )
-
-
     |> Repo.all()
   end
 
