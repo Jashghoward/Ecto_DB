@@ -14,6 +14,8 @@ defmodule MyTest.Customer do
 
   def changeset(customer, params) do
     customer
+
+
     |> cast(params, [:firstname, :lastname])
     |> validate_required([:firstname, :lastname])
   end
