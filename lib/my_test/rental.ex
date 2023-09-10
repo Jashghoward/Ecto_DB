@@ -91,6 +91,8 @@ defmodule MyTest.Rental do
   #         rental_attrs = %{customer_id: customer_id, movie_id: movie_id, date_rented: current_datetime_utc}
   #         Repo.insert!(Rental.changeset(%Rental{}, rental_attrs))
   #         IO.puts("Movie rented successfully")
+
+
   #     end
   #   end)
   # end
