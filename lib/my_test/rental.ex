@@ -83,6 +83,9 @@ defmodule MyTest.Rental do
   #   Repo.transaction(fn ->
   #     rental_count_query = from(r in Rental, where: r.customer_id == ^customer_id, select: count(r.id))
 
+
+
+
   #     case Repo.aggregate(rental_count_query, :count) do
   #       count when count >= 2 ->
   #         IO.puts("Customer has reached the maximum rental limit")
