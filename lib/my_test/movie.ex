@@ -20,6 +20,9 @@ defmodule MyTest.Movie do
 
 
     |> cast(params, [:title, :category, :shop_id])
+
+
+
     |> validate_required([:title, :category, :shop_id])
   end
   def list_movie do
