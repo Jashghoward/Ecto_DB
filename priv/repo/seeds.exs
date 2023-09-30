@@ -69,7 +69,7 @@ IO.puts "Inserted #{length(customers)} customers"
 
 # Create rentals for customers
 Enum.each(customers, fn customer ->
-  customer_movies = Enum.take(movies, 2)  # Limit to 2 movies per customer
+  customer_movies = Enum.take(movies, 2)  # Limit to 2 movies per customer (HEX Docs)
   Enum.each(customer_movies, fn movie ->
     rental_changeset = %Rental{
       customer_id: customer.id,
