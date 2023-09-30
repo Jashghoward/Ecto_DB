@@ -25,6 +25,8 @@ defmodule MyTest.Movie do
 
     |> validate_required([:title, :category, :shop_id])
   end
+
+
   def list_movie do
     query = from(m in Movie, join: s in assoc(m, :shop), select: {m.title, s.name})
     movies_with_shop_names = Repo.all(query)
