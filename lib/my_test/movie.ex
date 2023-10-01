@@ -15,6 +15,9 @@ defmodule MyTest.Movie do
 
 
   def changeset(movie, params \\ %{}) do
+
+
+
     movie
     |> cast(params, [:title, :category, :shop_id])
     |> validate_required([:title, :category, :shop_id])
