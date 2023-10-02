@@ -25,9 +25,6 @@ defmodule MyTest.Movie do
 
   def list_movie do
     query = from(m in Movie, join: s in assoc(m, :shop), select: {m.title, s.name})
-
-
-
     movies_with_shop_names = Repo.all(query)
 
   # Print the list of movies and their associated shop names
