@@ -31,6 +31,8 @@ defmodule MyTest.Movie do
 
 
 
+
+
       IO.puts("#{movie_title} (Shop: #{shop_name})")
     end)
   end
