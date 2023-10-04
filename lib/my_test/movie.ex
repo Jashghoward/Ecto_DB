@@ -21,10 +21,6 @@ defmodule MyTest.Movie do
   end
 
 
-
-
-
-
   def list_movie do
 
 
