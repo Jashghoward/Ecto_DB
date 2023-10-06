@@ -26,6 +26,9 @@ defmodule MyTest.Movie do
     movies_with_shop_names = Repo.all(query)
   # Print the list of movies and their associated shop names
     IO.puts("List of movies with their associated shop names:")
+
+
+
     Enum.each(movies_with_shop_names, fn {movie_title, shop_name} ->
 
 
