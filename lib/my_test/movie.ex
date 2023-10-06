@@ -29,8 +29,6 @@ defmodule MyTest.Movie do
     Enum.each(movies_with_shop_names, fn {movie_title, shop_name} ->
       IO.puts("#{movie_title} (Shop: #{shop_name})")
     end)
-
-
   end
 
   def create_movie do
