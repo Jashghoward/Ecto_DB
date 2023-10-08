@@ -17,6 +17,9 @@ defmodule MyTest.Customer do
 
 
     |> cast(params, [:firstname, :lastname])
+
+
+
     |> validate_required([:firstname, :lastname])
 
 
