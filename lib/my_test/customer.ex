@@ -8,7 +8,6 @@ defmodule MyTest.Customer do
     field(:firstname, :string)
     field(:lastname, :string)
     timestamps()
-
     has_many :rentals, Rental
   end
 
