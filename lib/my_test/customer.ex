@@ -21,11 +21,8 @@ defmodule MyTest.Customer do
 
   end
 
-
-
       new_customer = %Customer{firstname: "Brad", lastname: "Howard"} # Replace 1 with the actual shop ID
       Repo.insert!(new_customer)
-
       IO.puts("New movie added successfully.")
   end
 end
